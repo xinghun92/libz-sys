@@ -48,8 +48,6 @@ fn main() {
         }
 
         build_msvc_zlib(&target);
-    } else if target.contains("pc-windows-gnu") {
-        build_zlib_mingw();
     } else if (target.contains("musl") ||
                target != host ||
                want_static) &&
